@@ -12,16 +12,26 @@ namespace EvenOdd
         {
 
 
-            int num = 0;
+            int _num = 0;
             Console.WriteLine("Enter the number");
-            num = Convert.ToInt32((Console.ReadLine()));
-
-            ValidatingEvenOdd find = new ValidatingEvenOdd(num);
-            Console.ReadLine();
-
-
+           // num = Convert.ToInt32((Console.ReadLine()));
+           bool b = Int32.TryParse(Console.ReadLine(), out _num);
+            if (b == true)
+            {
 
 
+                ValidatingEvenOdd find = new ValidatingEvenOdd(_num);
+                find.check(_num);
+
+                Console.ReadLine();
+
+
+
+            }
+            else
+            {
+                Console.WriteLine("Enter valid Number format");
+            }
         }
     }
 }

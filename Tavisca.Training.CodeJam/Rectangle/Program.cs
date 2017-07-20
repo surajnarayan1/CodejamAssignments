@@ -10,18 +10,22 @@ namespace Rectangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the two value");
-            Console.WriteLine("Number of command line parameters = {0}",
-          args.Length);
-            int length;
-            length = args.Length;
-            int i;
-            int area = args[0] * args[1];
-             
+
+            int length;int breadth;
+            bool testforLength = int.TryParse(args[0], out length);
+           // int length = Convert.ToInt32(args[0]);
+            bool  testforbreadth = int.TryParse(args[1], out breadth);
+            if ((testforLength == true) && (testforbreadth == true))
+            {
+                Computation rectangle = new Computation();
+                rectangle.calculation(length, breadth);
 
 
-           
-              //  args1[index] = Convert.ToInt32(Console.ReadLine(args[index]));
+            }
+            else
+            {
+                Console.WriteLine("Enter in valid format");
+            }
 
         }
     }

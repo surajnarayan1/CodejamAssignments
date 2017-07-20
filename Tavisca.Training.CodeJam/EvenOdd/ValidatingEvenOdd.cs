@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvenOdd
 {
-    class ValidatingEvenOdd
+  public class ValidatingEvenOdd
     {
         private int num;
 
@@ -15,7 +15,7 @@ namespace EvenOdd
             this.num = num;
         }
 
-        void check(int num)
+       public  void check(int num)
         {
             if((num % 2)==1)
             

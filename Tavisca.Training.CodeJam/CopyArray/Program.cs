@@ -12,7 +12,7 @@ namespace CopyArray
         {
             Console.WriteLine("Enter the limit of array");
             int limit = Convert.ToInt32(Console.ReadLine());
-            TCopyArray arraycopy = new TCopyArray();
+            TcopyArray arraycopy = new TcopyArray();
             arraycopy.Tranfer(limit);
 
 

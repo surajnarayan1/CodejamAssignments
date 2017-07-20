@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CopyArray
 {
-    class TCopyArray
+    class TcopyArray
     {
 
 
@@ -25,7 +25,7 @@ namespace CopyArray
 
 
             }
-            Console.WriteLine("The second Array is as follow"
+            Console.WriteLine("The second Array is as follow");
             for(index=0;index<limit;index++)
             {
                 Console.WriteLine(arraynew[index]);
