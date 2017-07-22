@@ -27,6 +27,8 @@ namespace Rectangle
                 Console.WriteLine("Enter in valid format");
             }
 
+            Console.ReadKey();
+
         }
     }
 }
